@@ -13,6 +13,8 @@ const Search = (props) => {
         search(searchValue)
         resetInputField()
     }
+
+    
     return (
         <form className="search">
             <input
