@@ -3,7 +3,7 @@ import "../App.css";
 import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
-import { MOVIE_API_URL, MOVIE_API_KEY, SUBTITLE } from "./Strings";
+import { MOVIE_API_URL, MOVIE_API_KEY, SUBTITLE, PAGE_HEADER } from "./Strings";
 import { reducer } from "./Reducer";
 import {
   SEARCH_MOVIES_REQUEST,
@@ -55,7 +55,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header text="HOOKED" />
+      <Header text={PAGE_HEADER} />
       <Search search={search} />
       <p className="App-intro">{SUBTITLE}</p>
       <div className="movies">
